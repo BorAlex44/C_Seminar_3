@@ -1,0 +1,12 @@
+﻿using static System.Console;
+Clear();
+WriteLine("Введите координаты x,y,z для первой точки");
+int xa = Convert.ToInt32(ReadLine());
+int ya = Convert.ToInt32(ReadLine());
+int za = Convert.ToInt32(ReadLine());
+WriteLine("Введите координаты x,y,z для второй точки");
+int xb = Convert.ToInt32(ReadLine());
+int yb = Convert.ToInt32(ReadLine());
+int zb = Convert.ToInt32(ReadLine());
+double distance = Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya, 2) + Math.Pow(zb - za, 2));
+WriteLine($"Расстояние между двумя этими точками {distance:f2}");

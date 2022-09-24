@@ -2,9 +2,7 @@
 Clear();
 WriteLine("Введите любое пятизначное число: ");
 int number = int.Parse(ReadLine()!);
-int temp1 = number / 1000;
-int temp2 = number % 100;
-if ((temp1 / 10 == temp2 % 10) && (temp1 % 10 == temp2 / 10))
+if (((number / 1000) / 10 == (number % 100) % 10) && ((number / 1000) % 10 == (number % 100) / 10))
 {
     WriteLine($"Число {number} является палиндромом");
 }
